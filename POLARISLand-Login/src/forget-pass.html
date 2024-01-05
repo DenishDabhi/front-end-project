@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="/assetes/forget-pass.css">
+    </head>
+    <body>
+        <section class="sec1">
+            <div>
+                <img src="/image/login-logo.png" alt class="logo">
+            </div>
+            <div class="main_div">
+                <div class="form_div">
+                    <div>
+                        <h3 class="h3">Password reset</h3>
+                        <p class="p3">Enter your email address below and we’ll send you a link to reset your password.</p>
+                    </div>
+                    <form action>
+                        <div class="input_div">
+                            <input
+                                type="text"
+                                placeholder="Email address*"
+                                class="inpu"
+                                id="em"
+                            >
+                            <div class="button">
+                                <button type="button" class="btn2" onclick="validationform()">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script>
+      function validationform() {
+        var Email = document.getElementById("em").value;
+
+        if (Email == "") {
+          alert("Please Fill");
+        } 
+
+        else{
+        window.open("pass-reset.html","_self");
+        }
+      }
+        </script>
+    </body>
+</html>

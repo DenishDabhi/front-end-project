@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="/assetes/form.css">
+</head>
+
+<body>
+    <section class="sec1">
+        <div>
+            <img src="/image/login-logo.png" alt="" class="logo">
+        </div>
+        <div class="main_div">
+
+            <div class="p_div">
+                <div class="paragraph">
+                    <p class="p1">Process business credit checks powered by Creditsafe within <span
+                            style="color: #62D0F5;">seconds</span></p>
+                </div>
+                <div>
+                    <img src="/image/img1.webp.png" alt="">
+                </div>
+                <div class="dotts">
+                    <a href="" class="dots" style="color: #4CC9F0;">.</a>
+                    <a href="" class="dots">.</a>
+                    <a href="" class="dots">.</a>
+                </div>
+            </div>
+            <div class="form_div">
+                <div class="login">
+                    <a href="form.html" class="p2">Sign up</a>
+                    <a href="login.html" class="p4">Log in</a>
+                </div>
+                <div>
+                    <h3 class="h3">Sign up to LendTech</h3>
+                    <p class="p3">Create a free LendTech account</p>
+                </div>
+                <form action="">
+                    <div class="input_div">
+                        <input type="text" placeholder="First name*" class="inpu" id="inpu1">
+                        <input type="text" placeholder="Last name*" class="inpu" id="inpu2">
+                        <input type="text" placeholder="Company name*" class="inpu" id="inpu3">
+                        <select name="" class="inpuu" id="inpu4">
+                            <option value="" selected disabled>Select company*</option>
+                            <option value="DTL">DTL</option>
+                            <option value="ITL">ITL</option>
+                        </select>
+                        <input type="text" placeholder="Contact number*" class="inpu" id="inpu5">
+                        <div class="button">
+                            <button type="button" onclick=" validationform()">Next</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        function validationform() {
+            var phoneno = /^\d{10}$/;
+            var input = document.getElementById('inpu1').value;
+            var input2 = document.getElementById('inpu2').value;
+            var input3 = document.getElementById('inpu3').value;
+            var input4 = document.getElementById('inpu4').value;
+            var input5 = document.getElementById('inpu5').value;
+            var obj = { firstname: input, lastname: input2, companyname: input3, selectcompny: input4, contactnumber: input5 }
+
+            if (input == '' || input2 == '' || input3 == '' || input4 == '' || input5 == '') {
+                alert('Please Fill')
+            }
+            else if(!(phoneno).test(input5)){
+                alert("Please Enter Valid Contact Number");
+            }
+            else {
+                window.open("step2.html", "_self")
+
+                let lstore = JSON.stringify(obj);
+                localStorage.setItem('obj', lstore);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

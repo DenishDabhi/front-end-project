@@ -1,0 +1,262 @@
+body{
+    background: transparent linear-gradient(135deg, #073E8F 0%, #292E89 60%, #77209B 100%) 0% 0% no-repeat padding-box;
+    height: 555px;
+}
+.p1{
+    color: white;
+    width: 60%;
+    text-align: center;
+    padding-top: 10px;
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+.dotts{
+    padding-top: 8%;
+}
+.dots{
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+   text-decoration: none;
+}
+.p_div{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 25%;
+   height: auto;
+   background-color: #073481;
+   border-top-left-radius: 8px;  
+   border-bottom-left-radius: 8px;
+}
+.logo{
+    width: 8%;
+    height: auto;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.main_div{
+    display: flex;
+    justify-content: center;
+}
+.p2{
+    font-weight: bold;
+   color: #073481;
+   width: 50%;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+.p4{
+    font-weight: bold;
+    color: #073481;
+    background-color: #DDDDDD;
+    width: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.form_div{
+    background-color: white;
+    width: 25%; 
+    border-top-right-radius: 8px;  
+    border-bottom-right-radius: 8px;
+}
+.h3{
+    color: #073481;
+    padding-left: 22px;
+    margin: 0px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.p3{
+    color: #2A2946;
+    padding-left: 22px;
+    font-size: 13px;
+    margin: 0px;
+    margin-top: 4px;
+}
+input{
+    margin-left: 20px;
+    width: 80%;
+    color: #010A1A;
+    border-radius: 3px;
+}
+.input_div{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.inpu{
+    margin-top: 10px;
+    outline: none;
+    padding: 7px;
+    background-color: #F7F7F7;
+    border: 2px solid #DDDDDD;
+}
+.inpuu{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 85.5%;
+    outline: none;
+    border-radius: 3px;
+    padding: 7px;
+    background-color: #F7F7F7;
+    border: 2px solid #DDDDDD;
+}
+button{
+   cursor: pointer;
+   margin-top: 10px;
+   border-radius: 5px;
+   background-color: #073481;
+   color: white;
+   width: 120px;
+   height: 30px;
+   border: 1px solid #073481;
+}
+.button{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* responsive */
+
+
+@media(max-width:824px) and (min-width:600px){
+.p2{
+    width: 70%;
+    font-size: 13px;
+}
+.p4{
+    width: 70%;
+    font-size: 13px;
+}
+.h3{
+    font-size: 16px;
+}
+.p3{
+    font-size: 10px;
+}
+.inpuu{
+    width: 81.5%;
+    margin-left: 9px;
+}
+.inpu{
+    margin-left: 10px;
+    width: 70%;
+}
+img{
+    width: 100%;
+    height: 100px;
+}
+.dotts{
+    padding-top: 50%;
+}
+.p1{
+    width: 80%;
+    font-size: 15px;
+    padding-top: 50px;
+}
+}
+
+
+
+@media(max-width:600px) and (min-width:410px){
+    .p2{
+        width: 70%;
+        font-size: 13px;
+    }
+    .p4{
+        width: 70%;
+        font-size: 13px;
+    }
+    .h3{
+        font-size: 16px;
+    }
+    .p3{
+        font-size: 10px;
+    }
+    .inpuu{
+        width: 81.5%;
+        margin-left: 9px;
+    }
+    .inpu{
+        margin-left: 10px;
+        width: 70%;
+    }
+    img{
+        width: 100%;
+        height: 100px;
+    }
+    .dotts{
+        padding-top: 50%;
+    }
+    .p1{
+        width: 80%;
+        font-size: 15px;
+        padding-top: 50px;
+    }
+}
+
+
+
+@media(max-width:410px) and (min-width:200px){
+    .p2{
+        width: 70%;
+        font-size: 13px;
+    }
+    .p4{
+        width: 70%;
+        font-size: 13px;
+    }
+    .h3{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .p3{
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    .inpuu{
+        width: 81.5%;
+        margin-left: 5px;
+    }
+    .inpu{
+        margin-left: 5px;
+        width: 60%;
+    }
+    img{
+        width: 100%;
+        height: 90px;
+    }
+    .dotts{
+        padding-top: 70%;
+    }
+    .p1{
+        width: 90%;
+        font-size: 15px;
+        padding-top: 50px;
+    }
+}

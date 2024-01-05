@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_up</title>
+    <link rel="stylesheet" href="/assetes/sing_up.css">
+</head>
+<body>
+    <section class="sec1">
+    <div>
+        <img src="/image/login-logo.png" alt class="logo" />
+    </div>
+    <div class="main_div">
+    <div class="form_div">
+            <div class="input_div">
+                <h1>Sign Up Successful</h1>
+                <p>Your login was successfully created. We’ve sent you a verification email. Please check your inbox and verify your account before signing in.</p>
+                <button class="btn" onclick="validationform()">Log in</button>
+            </div>  
+    </div>
+    </div>
+</section>
+<script>
+    function validationform() {
+   
+      window.open("login.html","_self");
+
+      let lstore = JSON.stringify(obj);
+      localStorage.setItem('obj',lstore);
+      }
+  </script>
+</body>
+</html>
